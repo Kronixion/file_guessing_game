@@ -10,7 +10,7 @@ function checkGuess {
 }
 
 echo "How many files are in the current directory?"
-correctGuess=$(ls -l | grep -E "^-.*" | wc -l)
+correctGuess=$(ls -l -a | grep -E "^-.*" | wc -l)
 
 read userGuess
 
